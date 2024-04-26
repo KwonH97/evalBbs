@@ -12,6 +12,7 @@
     <h1>Index Page</h1>
 
     <a href="list">목록보기</a><br>
+    <a href="writeForm">글작성하기</a><br>
     
 </body>
 </html>
