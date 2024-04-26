@@ -9,9 +9,14 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Index Page</h1>
-
-    <a href="list">목록보기</a><br>
+    <h1>글 작성 Form</h1>
+    <hr>
+    <form action="write" method="post">
+        <input type="text" name="title" placeholder="title"><br>
+        <input type="text" name="content" placeholder="contnet"><br>
+        <input type="text" name="writer" placeholder="writer"><br>
+        <input type="submit" value="작성하기">        
+    </form>
     
 </body>
 </html>

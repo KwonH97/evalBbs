@@ -30,6 +30,6 @@
             </c:forEach>
         </tbody>
     </table>
-
+    <a href="writeForm">글작성하기</a><br>
 </body>
 </html>
