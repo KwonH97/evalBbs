@@ -12,4 +12,12 @@
 		VALUES (0, #{dto.title}, #{dto.content}, #{dto.writer}, now())
 	</insert>
 	
+	<delete id="delete">
+		DELETE FROM evalbbs where bno = #{bno}
+	</delete>
+	
+	<select id="getDto">
+		SELECT * From evalbbs where bno = #{bno}
+	</select>
+	
 </mapper>

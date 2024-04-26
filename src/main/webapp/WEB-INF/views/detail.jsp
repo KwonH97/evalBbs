@@ -9,9 +9,8 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>List Page</h1>
+    <h1>상세 페이지</h1>
     <hr>
-
     <table>
         <thead>
             <tr>
@@ -19,16 +18,14 @@
             </tr>
         </thead>
         <tbody>
-            <c:forEach var="list" items="${list}">
             <tr>
-                <td><a href="detail?bno=${list.bno}">${list.title}</a></td>
-                <td>${list.content}</td>
-                <td>${list.writer}</td>
-                <td>${list.regdate}</td>
+                <td>${dto.title}</td>
+                <td>${dto.content}</td>
+                <td>${dto.writer}</td>
+                <td>${dto.regdate}</td>
+                <a href="delete?bno=${dto.bno}">삭제</a>
             </tr>
-            </c:forEach>
         </tbody>
     </table>
-    <a href="writeForm">글작성하기</a><br>
 </body>
 </html>

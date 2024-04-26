@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.green.evalBbs.dao.IEvalBbsDao;
 import com.green.evalBbs.dto.EvalBbsDto;
@@ -43,5 +44,18 @@ public class EvalBbsController {
 		return "redirect:list";
 	}
 	
+	@RequestMapping("/delete")
+	public String delete(@RequestParam("bno") String bno) {
+		
+		dao.delete(bno);
+		
+		return "redirect:list";
+	}
 	
+	@RequestMapping("/detail")
+	public String detail(@RequestParam("bno") String bno, Model model) {
+		model.addAttribute("dto", dao.getDto(bno));
+		
+		return "detail";
+	}
 }
