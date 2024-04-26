@@ -9,6 +9,8 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>인덱스 페이지</h1>
+    <h1>Index Page</h1>
+
+    <a href="list">목록보기</a>
 </body>
 </html>
